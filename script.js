@@ -23,6 +23,18 @@ function updateClock(){
 
 setInterval(updateClock, 1000);
 
+function darkLightMode(){
+    const themeToggle = document.querySelector(".themeToggle");
+    const container = document.querySelector(".container");
+    const moonIcon = document.querySelector(".ri-lightbulb-line");
+
+    themeToggle.addEventListener("click", () => {
+        container.classList.toggle("light");
+        moonIcon.classList.toggle("light");
+    })
+}
+
 
 
 updateClock();
+darkLightMode();
